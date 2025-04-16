@@ -5,7 +5,7 @@
 }
 header {
     padding: 24px;
-    background-color: yellow;
+    background-color: rgb(253, 212, 0, 1);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -23,7 +23,7 @@ ul {
     padding: 24px;
 }
 li {
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     padding: 24px;
 }
 .cartul {
@@ -34,7 +34,7 @@ li {
     /* bottom: 0px; */
     padding: 0;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(253, 212, 0, 1);
     max-height: 400px;
     overflow: auto;
     /* height: 300px; */
@@ -42,9 +42,5 @@ li {
     list-style: none;
 }
 .cartul li {
-    background-color: blue;
-}
-header div ul li{
-    image-orientation: 0deg;
-    
+    background-color: rgba(253, 223, 0, 0.852);
 }

@@ -26,3 +26,22 @@ function openCarrinho(){
     })
 }
 openCarrinho()
+
+function montarLista(){
+    const ulProdutos = document.querySelector(".produtos")
+    data.items.forEach((item)=>{
+    ulProdutos.insertAdjacentHTML("beforeend",`
+        <li>
+            <p>${item.product.name}</p>
+            <button id="btnadd${item.product.id}" >Adicionar ao carrinho</button>
+        </li>
+        
+        `)
+        const btnadd = document.getElementById(`btnadd${item.product.id}`)
+        btnadd.addEventListener("click",()=>{
+            console.log("add ao carrinho",item.product)
+            carrinho.push(item.product)
+        })
+    })
+}
+montarLista()
